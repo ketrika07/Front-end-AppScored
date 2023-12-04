@@ -55,7 +55,7 @@ const AttackPage: React.FC = () => {
   }, [activeTab]);
 
   const fetchData = async (tab: string) => {
-    const endpoint = `https://localhost:7221/api/WhoScored/Attaques/${tab}`;
+    const endpoint = `https://design-corporation.xyz/api/WhoScored/Attaques/${tab}`;
 
     try {
       const response = await axios.get<Equipe[]>(endpoint);

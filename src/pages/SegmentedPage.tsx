@@ -54,7 +54,7 @@ const SegmentedPage: React.FC = () => {
   }, [activeTab]);
 
   const fetchData = async (tab: string) => {
-    const endpoint = `https://localhost:7221/api/WhoScored/Generals/${tab}`;
+    const endpoint = `https://design-corporation.xyz/api/WhoScored/Generals/${tab}`;
 
     try {
       const response = await axios.get<Equipe[]>(endpoint);
